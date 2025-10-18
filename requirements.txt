@@ -1,1 +1,4 @@
-pip install fastapi pydantic pydantic-settings
+fastapi
+pydantic
+pydantic-settings
+uvicorn
