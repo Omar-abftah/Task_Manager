@@ -1,10 +1,10 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    app_name: str
-    database_url: str
-    app_version: str
-    debug: bool
+    app_name: str = "Task Manager"
+    database_url: str = 'sqlite:///./task_manager.db'
+    app_version: str = "0.0.1"
+    debug: bool = False
 
     class Config:
         env_file = ".env"
