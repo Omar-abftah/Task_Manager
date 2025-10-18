@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt || echo "No requirements.txt found"
-      - name: Install pydantic-settings
-        run: pip install pydantic-settings
-
 
       - name: Run README generator
         run: python generate_readme.py
